@@ -8,7 +8,7 @@ const RuleLibrary = () => (
       <h2>Single-feature Rule</h2>
       <p>
         A <b>single-feature rule</b> is a threshold-based comparison on a single feature, such as "Table Scan output size &gt; 1 MB", formally written as <code>table_scan_output_size &gt; 1048576</code>.<br/>
-        Based on prior deployment experience in AnalyticDB and feature importance analysis, three key feature types are identified as highly effective for detecting memory-overloading (MO) queries:
+        Based on prior deployment experience in AnalyticDB and feature importance analysis, three key feature types are identified as highly effective for detecting MO queries:
       </p>
       <ul>
         <li><b>Operator Count</b></li>
@@ -16,7 +16,7 @@ const RuleLibrary = () => (
         <li><b>OOM Indicator</b></li>
       </ul>
       <p>
-        (See detailed explanations in the <a href="/query-features">Query Features</a> page.)<br/>
+        (See detailed explanations in the <a href="https://safeload-project.github.io/Homepage/#/query-features">Query Features</a> page.)<br/>
         SafeBench provides a public library of single-feature rules targeting these features, with thresholds derived from extensive business deployment experience.
       </p>
       <h2>Discriminative Rule</h2>

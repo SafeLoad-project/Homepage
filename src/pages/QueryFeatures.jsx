@@ -37,7 +37,7 @@ const QueryFeatures = () => (
             </tr>
           </thead>
           <tbody>
-            <tr><td>feature_0</td><td>The number of aggregation nodes</td></tr>
+            <tr><td>feature_0</td><td>The number of aggregation nodes.</td></tr>
             <tr><td>feature_1</td><td>The total estimated number of input rows across all aggregation nodes.</td></tr>
             <tr><td>feature_2</td><td>The maximum estimated number of input rows across all aggregation nodes.</td></tr>
             <tr><td>feature_3</td><td>The total estimated number of output rows across all aggregation nodes.</td></tr>
@@ -154,16 +154,16 @@ const QueryFeatures = () => (
             <tr><td>feature_114</td><td>The maximum estimated input size across all sort nodes.</td></tr>
             <tr><td>feature_115</td><td>The total estimated output size across all sort nodes.</td></tr>
             <tr><td>feature_116</td><td>The maximum estimated output size across all sort nodes.</td></tr>
-            <tr><td>feature_117</td><td>The number of filter nodes</td></tr>
-            <tr><td>feature_118</td><td>The number of output nodes</td></tr>
-            <tr><td>feature_119</td><td>The number of project nodes</td></tr>
-            <tr><td>feature_120</td><td>The number of sipConsumer nodes</td></tr>
-            <tr><td>feature_121</td><td>The number of sipProducer nodes</td></tr>
-            <tr><td>feature_122</td><td>The number of scalar nodes</td></tr>
-            <tr><td>feature_123</td><td>The number of runtimeCollect nodes</td></tr>
-            <tr><td>feature_124</td><td>The number of runtimeFilter nodes</td></tr>
-            <tr><td>feature_125</td><td>The number of values nodes</td></tr>
-            <tr><td>feature_126</td><td>The number of runtimeScan nodes</td></tr>
+            <tr><td>feature_117</td><td>The number of filter nodes.</td></tr>
+            <tr><td>feature_118</td><td>The number of output nodes.</td></tr>
+            <tr><td>feature_119</td><td>The number of project nodes.</td></tr>
+            <tr><td>feature_120</td><td>The number of sipConsumer nodes.</td></tr>
+            <tr><td>feature_121</td><td>The number of sipProducer nodes.</td></tr>
+            <tr><td>feature_122</td><td>The number of scalar nodes.</td></tr>
+            <tr><td>feature_123</td><td>The number of runtimeCollect nodes.</td></tr>
+            <tr><td>feature_124</td><td>The number of runtimeFilter nodes.</td></tr>
+            <tr><td>feature_125</td><td>The number of values nodes.</td></tr>
+            <tr><td>feature_126</td><td>The number of runtimeScan nodes.</td></tr>
             <tr><td>feature_127</td><td>The total number of INNER-type joins among all join nodes.</td></tr>
             <tr><td>feature_128</td><td>The total number of FULL-type joins among all join nodes.</td></tr>
             <tr><td>feature_129</td><td>The total number of LEFT-type joins among all join nodes.</td></tr>
