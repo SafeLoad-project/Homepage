@@ -15,7 +15,6 @@ import PropTypes from "prop-types";
 import { HashRouter, Routes, Route } from "react-router-dom";
 // Pages
 import Home from "./pages/Home";
-import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
 import QueryFeatures from "./pages/QueryFeatures";
 import Datasets from "./pages/Datasets";

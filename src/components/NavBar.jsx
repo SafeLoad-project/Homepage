@@ -9,7 +9,6 @@ import { Link, useLocation } from "react-router-dom";
 // Images
 import defaultLogo from "../images/defaultNavLogo.svg";
 // Components
-import { Link as ScrollLink } from "react-scroll";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import ThemeToggle from "./ThemeToggle";
 
