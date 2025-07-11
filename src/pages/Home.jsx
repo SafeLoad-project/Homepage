@@ -23,7 +23,7 @@ const Home = () => {
           
           <div className="row mt-5">
             <div className="col-md-6 mb-4">
-              <div className="card h-100 border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)'}}>
+              <div className="card h-100 border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
                 <div className="card-body text-white text-center p-4">
                   <h3 className="card-title mb-3">
                     <i className="fas fa-database me-2"></i>
@@ -37,7 +37,7 @@ const Home = () => {
             </div>
             
             <div className="col-md-6 mb-4">
-              <div className="card h-100 border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #34495e 0%, #2c3e50 100%)'}}>
+              <div className="card h-100 border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
                 <div className="card-body text-white text-center p-4">
                   <h3 className="card-title mb-3">
                     <i className="fas fa-cube me-2"></i>
@@ -51,7 +51,7 @@ const Home = () => {
             </div>
             
             <div className="col-md-6 mb-4">
-              <div className="card h-100 border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #34495e 0%, #2c3e50 100%)'}}>
+              <div className="card h-100 border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
                 <div className="card-body text-white text-center p-4">
                   <h3 className="card-title mb-3">
                     <i className="fas fa-clock me-2"></i>
@@ -65,7 +65,7 @@ const Home = () => {
             </div>
             
             <div className="col-md-6 mb-4">
-              <div className="card h-100 border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)'}}>
+              <div className="card h-100 border-0 shadow-lg" style={{background: 'linear-gradient(135deg, #d4af37 0%, #f4e4bc 100%)'}}>
                 <div className="card-body text-white text-center p-4">
                   <h3 className="card-title mb-3">
                     <i className="fas fa-cloud me-2"></i>
