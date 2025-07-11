@@ -17,14 +17,9 @@ import ThemeToggle from "./ThemeToggle";
 const navLinks = {
   routes: [
     { id: "1R", name: "Home", route: "/" },
-    { id: "2R", name: "All Projects", route: "/All-Projects" },
-  ],
-  to: [
-    { id: "1T", name: "Home", to: "Home" },
-    { id: "2T", name: "About Me", to: "About" },
-    { id: "3T", name: "Skills", to: "Skills" },
-    { id: "4T", name: "Projects", to: "Projects" },
-    { id: "5T", name: "Contact", to: "Contact" },
+    { id: "2R", name: "Query Features", route: "/query-features" },
+    { id: "3R", name: "Datasets", route: "/datasets" },
+    { id: "4R", name: "Rule Library", route: "/rule-library" },
   ],
 };
 // #endregion
@@ -86,47 +81,27 @@ const NavBar = ({ Logo = defaultLogo, callBack, closeDelay = 125 }) => {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav navbarScroll className="me-auto">
-              {pathname === "/"
-                ? navLinks.to.map((el) => {
-                    return (
-                      <Nav.Item key={el.id}>
-                        <ScrollLink
-                          to={el.to}
-                          spy={true}
-                          activeClass="active"
-                          className="nav-link"
-                          onClick={() => {
-                            setTimeout(() => {
-                              setisExpanded(false);
-                            }, closeDelay);
-                          }}
-                        >
-                          {el.name}
-                        </ScrollLink>
-                      </Nav.Item>
-                    );
-                  })
-                : navLinks.routes.map((el) => {
-                    return (
-                      <Nav.Item key={el.id}>
-                        <Link
-                          to={el.route}
-                          className={
-                            pathname === el.route
-                              ? "nav-link active"
-                              : "nav-link"
-                          }
-                          onClick={() => {
-                            setTimeout(() => {
-                              setisExpanded(false);
-                            }, closeDelay);
-                          }}
-                        >
-                          {el.name}
-                        </Link>
-                      </Nav.Item>
-                    );
-                  })}
+              {navLinks.routes.map((el) => {
+                return (
+                  <Nav.Item key={el.id}>
+                    <Link
+                      to={el.route}
+                      className={
+                        pathname === el.route
+                          ? "nav-link active"
+                          : "nav-link"
+                      }
+                      onClick={() => {
+                        setTimeout(() => {
+                          setisExpanded(false);
+                        }, closeDelay);
+                      }}
+                    >
+                      {el.name}
+                    </Link>
+                  </Nav.Item>
+                );
+              })}
             </Nav>
             <Nav>
               <ThemeToggle

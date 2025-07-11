@@ -26,10 +26,10 @@ const Home = () => {
       <section className="section">
         <Container>
           <h1 className="mb-4 display-4 text-center">SafeBench</h1>
-          <p>
-            SafeBench is an industrial-grade benchmark open-sourced by the Alibaba Cloud AnalyticDB team, aiming to advance academic research on preemptively identifying memory-overloading (MO) queries. The dataset covers three days, over 150 million real production queries, and contains rich query-level and cluster-level features.
-          </p>
-          <h2 className="mt-5">Dataset Specification</h2>
+          <p><b>SafeBench</b> is an industrial-grade benchmark open-sourced to advance academic research on preemptively identifying memory-overloading (MO) queries. SafeBench was curated by the Alibaba Cloud <a href="https://www.alibabacloud.com/en/product/analyticdb-for-mysql" target="_blank" rel="noopener noreferrer">AnalyticDB</a> team following rigorous data quality assessment and thorough removal of anomalous data. The <a href="https://safeload-project.github.io/SafeBench/" target="_blank" rel="noopener noreferrer">homepage</a> of SafeBench is now live. <b>The datasets can be downloaded <a href="https://www.kaggle.com/datasets/onefanwu/safebench" target="_blank" rel="noopener noreferrer">here</a>.</b></p>
+          <div className="d-flex justify-content-center my-4">
+            <a href="https://www.kaggle.com/datasets/onefanwu/safebench" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg px-5 py-3" style={{fontSize: '1.5rem', fontWeight: 'bold'}}>Download Dataset</a>
+          </div>
           <div className="table-responsive">
             <table className="table table-bordered text-center">
               <thead>
@@ -44,28 +44,8 @@ const Home = () => {
               </tbody>
             </table>
           </div>
-          <p>
-            The SafeBench dataset is divided into three subsets: A1, A2, and A3, covering 800+ production clusters and 150M+ queries. G1 and G2 are recommended training/testing splits.
-          </p>
-          <h2 className="mt-5">Feature Groups</h2>
-          <ul>
-            <li>Query-level features: structural and statistical features, memory-intensive operators, execution configuration, etc. (147 dimensions)</li>
-            <li>Cluster-level features: resource utilization, hardware configuration, historical OOM, etc. (16 dimensions)</li>
-          </ul>
-          <h2 className="mt-5">Dataset Download</h2>
-          <p>
-            Download link: <a href="https://www.kaggle.com/datasets/onefanwu/safebench" target="_blank" rel="noopener noreferrer">Kaggle SafeBench</a>
-          </p>
-          <h2 className="mt-5">Citation & Rule Library</h2>
-          <p>
-            Rule library: <a href="https://github.com/SafeLoad-project/SafeBench/blob/main/rule_library.txt" target="_blank" rel="noopener noreferrer">rule_library.txt</a><br/>
-            SafeBench homepage: <a href="https://safeload-project.github.io/SafeBench/" target="_blank" rel="noopener noreferrer">https://safeload-project.github.io/SafeBench/</a>
-          </p>
-          <h2 className="mt-5">License</h2>
-          <p>
-            SafeBench is licensed under CC BY-NC 4.0, allowing non-commercial use with attribution.<br/>
-            <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 License</a>
-          </p>
+          <p>This table outlines the specifications of SafeBench, which is constructed from real-world production data collected from Alibaba Cloud's data warehouse, AnalyticDB. The dataset spans three continuous days, forming three distinct subsets: SafeBench A1 (Day 1), A2 (Day 2), and A3 (Day 3). These subsets include over 150 million analytical queries executed across more than 800 production database clusters. The average CPU time per query is 7.9 seconds (A1), 8.6 seconds (A2), and 8.6 seconds (A3), respectively.</p>
+          <p>To assess the effectiveness of MO query detection methods, we divide the datasets into two evaluation groups. Group G1 uses A1 for training and A2 for testing, while Group G2 uses A2 for training and A3 for testing. By default, SafeBench uses the data from the previous day for training and the data from the current day for testing, reflecting the practical deployment setting in AnalyticDB where both models and heuristic rules are updated on a daily basis. Of course, researchers are free to combine data from A1, A2, and A3 as training or testing sets according to their own experimental needs.</p>
         </Container>
       </section>
     </>

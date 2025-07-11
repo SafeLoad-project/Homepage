@@ -17,6 +17,9 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
+import QueryFeatures from "./pages/QueryFeatures";
+import Datasets from "./pages/Datasets";
+import RuleLibrary from "./pages/RuleLibrary";
 // Components
 import { ErrorBoundary } from "react-error-boundary";
 import AppFallback from "./components/AppFallback";
@@ -147,7 +150,9 @@ const App = ({ projectCardImages = [], filteredProjects = [] }) => {
         </Element>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/All-Projects" element={<AllProjects />} />
+          <Route path="/query-features" element={<QueryFeatures />} />
+          <Route path="/datasets" element={<Datasets />} />
+          <Route path="/rule-library" element={<RuleLibrary />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer mode={footerTheme} />
