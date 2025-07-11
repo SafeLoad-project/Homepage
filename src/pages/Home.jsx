@@ -2,6 +2,7 @@ import React from "react";
 // 移除未使用的import
 // Components
 import { Container } from "react-bootstrap";
+import { updateTitle } from "../utils";
 
 // #region component
 const Home = () => {
