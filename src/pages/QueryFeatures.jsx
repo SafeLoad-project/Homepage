@@ -195,7 +195,7 @@ const QueryFeatures = () => (
             <tr><td>feature_155</td><td>The number of CPU cores dedicated to query execution within the DB cluster.</td></tr>
             <tr><td>feature_156</td><td>The number of CPU cores allocated to worker threads.</td></tr>
             <tr><td>feature_157</td><td>The number of front-end nodes in the DB cluster.</td></tr>
-            <tr><td>feature_158</td><td>The user-configured garbage collection level in the DB cluster.</td></tr>
+            <tr><td>feature_158</td><td>The user scale level in the DB cluster.</td></tr>
             <tr><td>feature_159</td><td>The degree of query parallelism.</td></tr>
             <tr><td>feature_160</td><td>Resource group ID of the DB cluster.</td></tr>
             <tr><td>feature_161</td><td>The number of Out-of-Memory (OOM) events that occurred in the database cluster associated with the query on the previous day.</td></tr>
