@@ -17,7 +17,8 @@ const Home = () => {
         <Container>
           <h1 className="mb-4 display-4 text-center">SafeBench</h1>
           <p><b>SafeBench</b> is an industrial-grade benchmark open-sourced to advance academic research on preemptively identifying memory-overloading (MO) queries. SafeBench was curated by the Alibaba Cloud <a href="https://www.alibabacloud.com/en/product/analyticdb-for-mysql" target="_blank" rel="noopener noreferrer">AnalyticDB</a> team following rigorous data quality assessment and thorough removal of anomalous data. SafeBench is released under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0). More details about MO Queres at <a href="https://www.alibabacloud.com/blog/intelligent-routing-of-memory---overloading-queries-in-serverless-data-warehouses_602559">[1]</a> <a href="https://www.alibabacloud.com/blog/introducing-intelligent-query-routing-on-analyticdb-for-always-online-analytics---no-crash_602558">[2]</a>
-          <div className="d-flex justify-content-center my-4">
+          </p>
+            <div className="d-flex justify-content-center my-4">
             <a href="https://www.kaggle.com/datasets/onefanwu/safebench" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg px-5 py-3" style={{fontSize: '1.5rem', fontWeight: 'bold'}}>Download Dataset</a>
           </div>
           
